@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Form</title>
+  </head>
+  <body>
+    1. Форма создания записи (Create):
+    <form action="create.php" method="post">
+      <label>Firstname:</label>
+      <input type="text" name="firstname" required />
+      <br />
+      <label>Lastname:</label>
+      <input type="text" name="lastname" required />
+      <br />
+      <label>Email:</label>
+      <input type="email" name="email" required />
+      <br />
+      <input type="submit" value="Create" />
+    </form>
+    2. Форма чтения записи (Read):
+    <form action="read.php" method="get">
+      <label>ID User:</label>
+      <input type="text" name="id_user" required />
+      <br />
+      <input type="submit" value="Read" />
+    </form>
+
+    3. Форма обновления записи (Update):
+    <form action="update.php" method="post">
+      <label>ID User:</label>
+      <input type="text" name="id_user" required />
+      <br />
+      <label>Firstname:</label>
+      <input type="text" name="firstname" />
+      <br />
+      <label>Lastname:</label>
+      <input type="text" name="lastname" />
+      <br />
+      <label>Email:</label>
+      <input type="email" name="email" />
+      <br />
+      <input type="submit" value="Update" />
+    </form>
+
+    4. Форма удаления записи (Delete):
+    <form action="delete.php" method="post">
+      <label>ID User:</label>
+      <input type="text" name="id_user" required />
+      <br />
+      <input type="submit" value="Delete" />
+    </form>
+  </body>
+</html>
