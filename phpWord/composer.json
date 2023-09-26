@@ -1,0 +1,19 @@
+{
+    "name": "mti/blog",
+    "description": "Текст",
+    "autoload": {
+        "psr-4": {
+            "Mti\\Blog\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "muhammadkhon",
+            "email": "muhammadkhon@bk.ru"
+        }
+    ],
+    "require": {
+        "phpoffice/phpword": "^1.1",
+        "phpmailer/phpmailer": "^6.8"
+    }
+}
